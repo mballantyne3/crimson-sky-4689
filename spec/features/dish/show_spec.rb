@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'dish show page' do
-  describe 'US1' do
+  describe 'US1 and US2' do
     before :each do
       @chef_1 = Chef.create!(name: "MacKinley")
       @mac = Dish.create!(name: "Mac n Cheese", description: "cheesy goodness", chef_id: @chef_1.id)
