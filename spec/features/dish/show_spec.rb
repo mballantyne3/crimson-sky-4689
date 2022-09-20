@@ -5,8 +5,8 @@ RSpec.describe 'dish show page' do
     before :each do
       @chef_1 = Chef.create!(name: "MacKinley")
       @mac = Dish.create!(name: "Mac n Cheese", description: "cheesy goodness", chef_id: @chef_1.id)
-      @cheddar = Ingredient.create!(name: "Cheddar", calories: 250, dish_id: @mac.id)
-      @pasta = Ingredient.create!(name: "Pasta", calories: 150, dish_id: @mac.id)
+      @cheddar = Ingredient.create!(name: "Cheddar", calories: 250)
+      @pasta = Ingredient.create!(name: "Pasta", calories: 150)
       DishIngredient.create!(dish_id: @mac.id, ingredient_id: @pasta.id)
       DishIngredient.create!(dish_id: @mac.id, ingredient_id: @cheddar.id)
     end
