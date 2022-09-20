@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/dishes/:id", to: "dish#show"
 
   get "/chef/:id", to: "chef#show"
+  get "/chef/:id/ingredients", to: "chef_ingredients#index"
 end
